@@ -25,7 +25,7 @@ spec:
             do
               bash $cert;
           done
-        image: gcr.io/flink-operator/deployer:webhook-cert
+        image: gcr.dockerproxy.com/flink-operator/deployer:webhook-cert
         imagePullPolicy: Always
         name: create-cert
         volumeMounts:

@@ -36,15 +36,15 @@ resources:
   - viewer-sa.yaml
   - kfp-launcher-configmap.yaml
 images:
-  - name: gcr.io/ml-pipeline/api-server
+  - name: gcr.dockerproxy.com/ml-pipeline/api-server
     newTag: 2.0.0-alpha.7
-  - name: gcr.io/ml-pipeline/persistenceagent
+  - name: gcr.dockerproxy.com/ml-pipeline/persistenceagent
     newTag: 2.0.0-alpha.7
-  - name: gcr.io/ml-pipeline/scheduledworkflow
+  - name: gcr.dockerproxy.com/ml-pipeline/scheduledworkflow
     newTag: 2.0.0-alpha.7
-  - name: gcr.io/ml-pipeline/frontend
+  - name: gcr.dockerproxy.com/ml-pipeline/frontend
     newTag: 2.0.0-alpha.7
-  - name: gcr.io/ml-pipeline/viewer-crd-controller
+  - name: gcr.dockerproxy.com/ml-pipeline/viewer-crd-controller
     newTag: 2.0.0-alpha.7
-  - name: gcr.io/ml-pipeline/visualization-server
+  - name: gcr.dockerproxy.com/ml-pipeline/visualization-server
     newTag: 2.0.0-alpha.7

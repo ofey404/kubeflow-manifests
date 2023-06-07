@@ -4,8 +4,8 @@ commonLabels:
   app.kubernetes.io/name: flinkoperator
   kustomize.component: flink-operator
 images:
-- name: gcr.io/flink-operator/flink-operator
-  newName: gcr.io/flink-operator/flink-operator
+- name: gcr.dockerproxy.com/flink-operator/flink-operator
+  newName: gcr.dockerproxy.com/flink-operator/flink-operator
   newTag: v1beta1-6
 namespace: kubeflow
 resources:

@@ -41,22 +41,22 @@ patchesStrategicMerge:
   - apiserver-deployment.yaml
   - metadata-writer-deployment.yaml
 images:
-  - name: gcr.io/ml-pipeline/api-server
+  - name: gcr.dockerproxy.com/ml-pipeline/api-server
     newName: docker.io/aipipeline/api-server
     newTag: 1.5.1
-  - name: gcr.io/ml-pipeline/persistenceagent
+  - name: gcr.dockerproxy.com/ml-pipeline/persistenceagent
     newName: docker.io/aipipeline/persistenceagent
     newTag: 1.5.1
-  - name: gcr.io/ml-pipeline/scheduledworkflow
+  - name: gcr.dockerproxy.com/ml-pipeline/scheduledworkflow
     newName: docker.io/aipipeline/scheduledworkflow
     newTag: 1.5.1
-  - name: gcr.io/ml-pipeline/frontend
+  - name: gcr.dockerproxy.com/ml-pipeline/frontend
     newName: docker.io/aipipeline/frontend
     newTag: 1.5.1
-  - name: gcr.io/ml-pipeline/viewer-crd-controller
+  - name: gcr.dockerproxy.com/ml-pipeline/viewer-crd-controller
     newTag: 1.8.4
-  - name: gcr.io/ml-pipeline/visualization-server
+  - name: gcr.dockerproxy.com/ml-pipeline/visualization-server
     newTag: 1.8.4
-  - name: gcr.io/ml-pipeline/metadata-writer
+  - name: gcr.dockerproxy.com/ml-pipeline/metadata-writer
     newName: docker.io/aipipeline/metadata-writer
     newTag: 1.5.1

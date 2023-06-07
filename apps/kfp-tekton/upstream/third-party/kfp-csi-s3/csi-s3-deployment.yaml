@@ -370,7 +370,7 @@ spec:
       serviceAccountName: kfp-csi-s3
       containers:
         - name: driver-registrar
-          image: "k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.3.0"
+          image: "k8s.gcr.dockerproxy.com/sig-storage/csi-node-driver-registrar:v2.3.0"
           imagePullPolicy: Always
           args:
             - --v=5
@@ -460,7 +460,7 @@ spec:
       serviceAccountName: kfp-csi-attacher
       containers:
         - name: kfp-csi-attacher
-          image: "k8s.gcr.io/sig-storage/csi-attacher:v3.3.0"
+          image: "k8s.gcr.dockerproxy.com/sig-storage/csi-attacher:v3.3.0"
           imagePullPolicy: Always
           args:
             - --v=5
@@ -501,7 +501,7 @@ spec:
       serviceAccountName: kfp-csi-provisioner
       containers:
         - name: kfp-csi-provisioner
-          image: "k8s.gcr.io/sig-storage/csi-provisioner:v2.2.2"
+          image: "k8s.gcr.dockerproxy.com/sig-storage/csi-provisioner:v2.2.2"
           imagePullPolicy: Always
           args:
             - -v=5

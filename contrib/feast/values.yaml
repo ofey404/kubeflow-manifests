@@ -5,7 +5,7 @@ feast-core:
     # feast-core.postgresql.existingSecret -- Kubernetes secrets that contains the postgresql password
     existingSecret: feast-postgresql
   image:
-    repository: gcr.io/kf-feast/feast-core
+    repository: gcr.dockerproxy.com/kf-feast/feast-core
     tag: develop
 
 feast-online-serving:
@@ -13,7 +13,7 @@ feast-online-serving:
   fullnameOverride: feast-online-serving
   enabled: true
   image:
-    repository: gcr.io/kf-feast/feast-serving
+    repository: gcr.dockerproxy.com/kf-feast/feast-serving
     tag: develop
 
   application-override.yaml:
@@ -27,7 +27,7 @@ feast-jupyter:
 feast-jobservice:
   # feast-jobservice.enabled -- Flag to install Feast Job Service
   image:
-    repository: gcr.io/kf-feast/feast-jobservice
+    repository: gcr.dockerproxy.com/kf-feast/feast-jobservice
   enabled: true
 
 postgresql:

@@ -417,7 +417,7 @@ spec:
 
       containers:
       - name: feast-core
-        image: gcr.io/kf-feast/feast-core:develop
+        image: gcr.dockerproxy.com/kf-feast/feast-core:develop
         imagePullPolicy: IfNotPresent
 
         volumeMounts:
@@ -493,7 +493,7 @@ spec:
 
       containers:
       - name: feast-jobservice
-        image: gcr.io/kf-feast/feast-jobservice:develop
+        image: gcr.dockerproxy.com/kf-feast/feast-jobservice:develop
         imagePullPolicy: IfNotPresent
 
         env:
@@ -566,7 +566,7 @@ spec:
 
       containers:
       - name: feast-serving
-        image: gcr.io/kf-feast/feast-serving:develop
+        image: gcr.dockerproxy.com/kf-feast/feast-serving:develop
         imagePullPolicy: IfNotPresent
 
         volumeMounts:

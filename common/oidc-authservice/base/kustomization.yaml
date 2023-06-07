@@ -42,6 +42,6 @@ vars:
 configurations:
 - params.yaml
 images:
-- name: gcr.io/arrikto/kubeflow/oidc-authservice
-  newName: gcr.io/arrikto/kubeflow/oidc-authservice
+- name: gcr.dockerproxy.com/arrikto/kubeflow/oidc-authservice
+  newName: gcr.dockerproxy.com/arrikto/kubeflow/oidc-authservice
   newTag: e236439

@@ -40,10 +40,10 @@ spec:
             "-imagedigest-exporter-image", $(tekton-registry)/$(imagedigestexporter),
             "-pr-image", $(tekton-registry)/$(pullrequest-init),
             "-build-gcs-fetcher-image", $(tekton-registry)/$(gcs-fetcher),
-            # This is gcr.io/google.com/cloudsdktool/cloud-sdk:302.0.0-slim
+            # This is gcr.dockerproxy.com/google.com/cloudsdktool/cloud-sdk:302.0.0-slim
             "-gsutil-image", $(gsutil-registry)/$(gsutil),
             # The shell image must be root in order to create directories and copy files to PVCs.
-            # gcr.io/distroless/base:debug as of November 15, 2020
+            # gcr.dockerproxy.com/distroless/base:debug as of November 15, 2020
             # image shall not contains tag, so it will be supported on a runtime like cri-o
             "-shell-image", $(bash-registry)/$(bash)]
           volumeMounts:

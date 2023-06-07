@@ -140,7 +140,7 @@ spec:
       enableServiceLinks: false
       containers:
         - name: controller
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_controller@sha256:f40825f7b4384ba8baac90018c42e4fd8aa2e37ad7a9e1c00c8858b73ed8d987
+          image: gcr.dockerproxy.com/knative-releases/knative.dev/eventing/cmd/in_memory/channel_controller@sha256:f40825f7b4384ba8baac90018c42e4fd8aa2e37ad7a9e1c00c8858b73ed8d987
           env:
             - name: WEBHOOK_NAME
               value: inmemorychannel-webhook
@@ -157,7 +157,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.namespace
             - name: DISPATCHER_IMAGE
-              value: gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:eef625176c57aab4c3061428b787f844529dfd19b82cf50ccaffc909072d568f
+              value: gcr.dockerproxy.com/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:eef625176c57aab4c3061428b787f844529dfd19b82cf50ccaffc909072d568f
             - name: POD_NAME
               valueFrom:
                 fieldRef:
@@ -286,7 +286,7 @@ spec:
       enableServiceLinks: false
       containers:
         - name: dispatcher
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:eef625176c57aab4c3061428b787f844529dfd19b82cf50ccaffc909072d568f
+          image: gcr.dockerproxy.com/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:eef625176c57aab4c3061428b787f844529dfd19b82cf50ccaffc909072d568f
           readinessProbe:
             failureThreshold: 3
             httpGet:
